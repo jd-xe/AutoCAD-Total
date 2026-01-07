@@ -1,0 +1,28 @@
+.form-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    color: aliceblue;
+}
+#title-form{
+    justify-content: center;
+    align-items: center;
+}
+#politica-form {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+#title-form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font: bold;
+   font-size: 30px;
+}
+
+#btn-register{
+    padding-top: 10px;
+}

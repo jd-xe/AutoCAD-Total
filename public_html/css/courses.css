@@ -1,0 +1,105 @@
+/* --- Sección General --- */
+#id-container {
+    padding: 60px 0;
+    position: relative;
+    z-index: 10;
+}
+
+/* Título de la sección */
+#container-learning-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    background: var(--primary-gradient, linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Tarjeta del Curso (Card) --- */
+.course-card {
+    background: rgba(30, 41, 59, 0.7); /* Fondo oscuro semitransparente */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    height: 100%; /* Para que todas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(124, 58, 237, 0.5); /* Borde morado al pasar mouse */
+}
+
+/* Cuerpo de la tarjeta */
+.course-card .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Imagen circular o redondeada */
+.course-img-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Hacemos la imagen redonda */
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover .course-img-container {
+    transform: scale(1.1) rotate(5deg);
+    border-color: #4f46e5;
+}
+
+.course-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tipografía */
+.course-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.course-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: #cbd5e1; /* Gris azulado claro */
+    margin-bottom: 1rem;
+    flex-grow: 1; /* Empuja el footer hacia abajo */
+}
+
+/* Footer de la tarjeta */
+.course-footer {
+    background: rgba(0, 0, 0, 0.2); /* Fondo ligeramente más oscuro */
+    padding: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Reutilizamos los botones del paso anterior */
+.btn-sm-glow {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}

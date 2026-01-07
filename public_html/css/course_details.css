@@ -1,0 +1,245 @@
+/* --- HERO DEL CURSO --- */
+.curso-hero {
+    position: relative;
+    padding: 6rem 0 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: radial-gradient(circle at center, rgba(79, 70, 229, 0.15) 0%, transparent 70%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.curso-hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 20px rgba(79, 70, 229, 0.3));
+}
+
+.curso-hero .lead {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: #94a3b8;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+/* --- SECCIONES GENERALES (GLASS) --- */
+.curso-section {
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, #4f46e5, #7c3aed);
+    border-radius: 2px;
+}
+
+/* --- LISTA "QUÉ APRENDERÁS" --- */
+.learn-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.learn-item {
+    background: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.learn-item:hover {
+    background: rgba(79, 70, 229, 0.1);
+    border-color: rgba(79, 70, 229, 0.3);
+    transform: translateX(5px);
+}
+
+.learn-item i {
+    font-size: 1.4rem;
+    color: #4f46e5;
+    margin-right: 15px;
+    filter: drop-shadow(0 0 5px rgba(79, 70, 229, 0.5));
+}
+
+.learn-item span {
+    color: #e2e8f0;
+    font-weight: 500;
+}
+
+/* --- TARJETAS DE TEMARIO Y REQUISITOS --- */
+.glass-card {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(124, 58, 237, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.glass-header {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.glass-header i {
+    margin-right: 10px;
+    color: #a78bfa;
+}
+
+.glass-body {
+    padding: 1.5rem;
+}
+
+.glass-body ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+}
+
+.glass-body li {
+    color: #cbd5e1;
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.glass-body li::marker {
+    color: #4f46e5;
+}
+
+/* --- CERTIFICACIÓN --- */
+.cert-section {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3rem;
+    margin: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cert-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.cert-icon-wrapper {
+    background: rgba(255, 255, 255, 0.05);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #f59e0b;
+    margin-right: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cert-content h3 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cert-content li {
+    color: #e2e8f0;
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    color: #a78bfa;
+    font-weight: 600;
+}
+
+/* --- BOTÓN FLOTANTE (FAB) BROCHURE --- */
+/* POSICIONAMIENTO CORREGIDO: Encima del stack de WhatsApp */
+#download-brochure-fab {
+    position: fixed;
+    right: 30px; /* Alineado con los otros botones */
+    bottom: 260px; /* 30px (base) + 210px (altura stack botones contacto) + 20px (gap) */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    z-index: 1040;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* Animación de entrada similar a los otros */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUpBounceFab 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 0.4s; /* Delay para salir después de los de contacto */
+}
+
+#download-brochure-fab:hover {
+    transform: scale(1.15) translateY(-5px) !important;
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.6);
+}
+
+@keyframes fadeInUpBounceFab {
+    0% { opacity: 0; transform: translateY(60px) scale(0.8); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Ajuste Móvil */
+@media (max-width: 768px) {
+    #download-brochure-fab {
+        right: 20px;
+        bottom: 230px; /* Ajuste para iconos móviles más pequeños (50px * 3 + gaps) */
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,39 @@
+body {
+  overflow-x: hidden;
+  display: flex;
+}
+
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  margin-left: 260px;
+  padding: 20px;
+  width: calc(100vw - 260px);
+  overflow-x: hidden;
+}
+
+.content {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 800px;
+  table-layout: auto;
+}

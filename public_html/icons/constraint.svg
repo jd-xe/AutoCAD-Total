@@ -1,0 +1,7 @@
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg" aria-label="Diseño paramétrico">
+  <rect x="4" y="5" width="7" height="6" rx="0.8" stroke="#00baff" stroke-width="1.6"/>
+  <circle cx="17" cy="9" r="3" stroke="#00baff" stroke-width="1.6"/>
+  <path d="M11 8c2 0 4 .5 6 1" stroke="#00baff" stroke-width="1.2" stroke-dasharray="2 2" stroke-linecap="round"/>
+  <path d="M6 17h12M6 17l1-1.2M6 17l1 1.2M18 17l-1-1.2M18 17l-1 1.2" stroke="#00baff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

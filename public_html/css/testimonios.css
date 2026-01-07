@@ -1,0 +1,103 @@
+/* --- Sección Testimonios --- */
+#testimonials-container {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden; /* Para que nada se salga */
+}
+
+/* Título */
+#testi-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    background: var(--primary-gradient, linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Tarjeta Glass --- */
+.testimonial-card {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    background: rgba(30, 41, 59, 0.8);
+    border-color: rgba(124, 58, 237, 0.4); /* Borde morado suave */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* --- Icono de Comillas Decorativo --- */
+.quote-icon-bg {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.03); /* Casi invisible, muy elegante */
+    font-family: serif;
+    line-height: 1;
+    pointer-events: none;
+}
+
+/* --- Estrellas --- */
+.stars {
+    color: #fbbf24; /* Amarillo ámbar */
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* --- Texto del comentario --- */
+.testi-text {
+    font-family: 'Poppins', sans-serif;
+    color: #e2e8f0; /* Blanco hueso */
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Perfil del Usuario --- */
+.user-profile {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #475569 0%, #334155 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+.user-info h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+}
+
+.user-info span {
+    font-size: 0.85rem;
+    color: #94a3b8; /* Gris azulado */
+}

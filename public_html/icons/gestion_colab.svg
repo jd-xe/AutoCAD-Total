@@ -1,0 +1,8 @@
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg" aria-label="Gestión BIM colaborativa">
+  <path d="M6 8l6-3 6 3v5l-6 3-6-3V8z" stroke="#00baff" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M6 13l6 3 6-3" stroke="#00baff" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M5 18h8" stroke="#00baff" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M18.5 17l2 2-2 2" stroke="#00baff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13 19h5" stroke="#00baff" stroke-width="1.4" stroke-linecap="round"/>
+</svg>

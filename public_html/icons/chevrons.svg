@@ -1,0 +1,8 @@
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg" aria-label="Automatización y AutoLISP">
+  <circle cx="9" cy="15" r="3.2" stroke="#00baff" stroke-width="1.6"/>
+  <path d="M9 11.2v1.2M9 17.6v1.2M5.8 15h1.2M10.9 15h1.2M6.7 12.7l.9.9M10.4 16.4l.9.9M6.7 17.3l.9-.9M10.4 13.6l.9-.9"
+        stroke="#00baff" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M15.5 9l-2 2 2 2" stroke="#00baff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20.5 9l2 2-2 2" stroke="#00baff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

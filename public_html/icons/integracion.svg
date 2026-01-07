@@ -1,0 +1,7 @@
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg" aria-label="Integración con otros softwares">
+  <rect x="3.5" y="5" width="7.5" height="5.5" rx="1" stroke="#00baff" stroke-width="1.6"/>
+  <rect x="13" y="13.5" width="7.5" height="5.5" rx="1" stroke="#00baff" stroke-width="1.6"/>
+  <path d="M11 8h3.5m0 0l-1-1m1 1l-1 1" stroke="#00baff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13 16h-3.5m0 0l1-1m-1 1l1 1" stroke="#00baff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

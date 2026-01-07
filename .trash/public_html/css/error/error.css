@@ -1,0 +1,38 @@
+#general-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#general-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+#general-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#general-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#btn-back-home {
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  #general-content h1 {
+    font-size: 1.8rem;
+  }
+
+  #general-content p {
+    font-size: 1rem;
+  }
+}

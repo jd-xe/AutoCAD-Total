@@ -1,0 +1,76 @@
+/* --- Footer Moderno --- */
+.footer-dark {
+    background: rgba(15, 23, 42, 0.95); /* Casi negro, pero con tono azulado */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Línea superior brillante */
+    padding-top: 80px;
+    padding-bottom: 30px;
+    position: relative;
+    color: #94a3b8; /* Gris suave para texto */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Títulos de columnas */
+.footer-heading {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* Pequeña línea debajo de los títulos */
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: var(--primary-gradient, linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%));
+    bottom: -8px;
+    left: 0;
+    border-radius: 2px;
+}
+
+/* Enlaces */
+.footer-dark a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block; /* Para que ocupen la línea */
+    margin-bottom: 0.5rem;
+}
+
+.footer-dark a:hover {
+    color: #fff;
+    padding-left: 5px; /* Efecto de movimiento al pasar el mouse */
+}
+
+/* Iconos Sociales */
+.social-icons a {
+    display: inline-block !important; /* Excepción para iconos */
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.social-icons a:hover {
+    background: var(--primary-gradient, #4f46e5);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+    padding-left: 0; /* Anular efecto anterior */
+}
+
+/* Barra inferior */
+.bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 60px;
+    padding-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}

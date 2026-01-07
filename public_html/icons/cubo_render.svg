@@ -1,0 +1,6 @@
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg" aria-label="Render y presentación">
+  <path d="M8 6l6 3.5V16l-6 3.5L2 16V9.5L8 6z" stroke="#00baff" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M18.5 6.5v2M18.5 15.5v2M15 10h2M20 10h2M15.8 7.8l1.1 1.1M20.1 12.1l1.1 1.1M15.8 12.2l1.1-1.1M20.1 7.9l1.1-1.1"
+        stroke="#00baff" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

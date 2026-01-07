@@ -1,0 +1,99 @@
+/* --- Contenedor de Botones --- */
+#floating-buttons-1 {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1040;
+}
+
+/* --- Botón Base --- */
+.btn-float {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+    font-size: 28px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    
+    /* Preparar para la animación de entrada */
+    opacity: 0; 
+    transform: translateY(50px);
+    animation: fadeInUpBounce 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Para el hover */
+}
+
+/* --- Efecto Hover (Crece al pasar el mouse) --- */
+.btn-float:hover {
+    transform: scale(1.15) translateY(-5px) !important; /* !important para sobreescribir la animación inicial si fuera necesario */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Colores Específicos --- */
+
+/* WhatsApp + Animación de "Onda" (Pulse) para llamar la atención */
+.btn-whatsapp-1 {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    animation-delay: 0.1s; /* Aparece primero */
+    /* Agregamos una segunda animación infinita de pulso */
+    animation: 
+        fadeInUpBounce 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 0.1s,
+        pulse-ring 3s infinite 2s; /* Empieza a latir después de 2 segundos */
+}
+
+.btn-calendar-1 {
+    background: linear-gradient(135deg, #4285F4 0%, #3367D6 100%);
+    animation-delay: 0.2s; /* Aparece segundo */
+}
+
+.btn-telegram-1 {
+    background: linear-gradient(135deg, #2AABEE 0%, #229ED9 100%); /* Gradiente oficial Telegram */
+    animation-delay: 0.3s; /* Aparece tercero */
+}
+
+/* --- Keyframes (Las animaciones) --- */
+
+/* 1. Entrada con rebote (De abajo hacia arriba) */
+@keyframes fadeInUpBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(60px) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 2. Efecto de Onda/Latido (Sutil) */
+@keyframes pulse-ring {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Ajuste Móvil: Hacerlos un poco más pequeños para no tapar contenido */
+@media (max-width: 768px) {
+    .btn-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    #floating-buttons-1 {
+        bottom: 20px;
+        right: 20px;
+    }
+}

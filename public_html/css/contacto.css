@@ -1,0 +1,91 @@
+/* Usamos el prefijo 'cnt-' para evitar colisiones */
+
+#cnt-page-wrapper {
+    min-height: 100vh;
+    padding-top: 60px; /* Espacio para el header sticky */
+}
+
+/* Tarjeta Izquierda (Info) */
+.cnt-info-card {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.cnt-info-item {
+    display: flex;
+    align-items: center;
+}
+
+.cnt-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    background: rgba(79, 70, 229, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #a78bfa;
+    margin-right: 1.5rem;
+    border: 1px solid rgba(79, 70, 229, 0.2);
+}
+
+/* Mapa */
+.cnt-map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.cnt-map-container iframe {
+    filter: grayscale(20%) contrast(1.2) invert(90%); /* Mapa estilo Dark Mode */
+}
+
+/* Tarjeta Derecha (Formulario) */
+.cnt-form-card {
+    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2.5rem;
+    height: 100%;
+}
+
+/* Inputs estilo Glass con prefijo */
+.cnt-glass-input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    border-radius: 0 10px 10px 0; /* Borde derecho redondeado */
+    padding: 12px;
+}
+
+.cnt-glass-input:focus {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #4f46e5 !important;
+    box-shadow: none;
+}
+
+/* Icono dentro del input group */
+.cnt-glass-icon {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-right: none !important;
+    color: #a78bfa;
+    border-radius: 10px 0 0 10px; /* Borde izquierdo redondeado */
+}
+
+/* Placeholders */
+.cnt-glass-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Select option fix (los options suelen ser blancos en algunos navegadores) */
+.cnt-glass-input option {
+    background-color: #1e293b;
+    color: white;
+}
