@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Pago aprobado - Acceso a tu cuenta AMISAM</title>
+    <title>Pago aprobado - Acceso a tu cuenta AcademiaCAD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -21,14 +21,14 @@
                             <table width="100%">
                                 <tr>
                                     <td align="center">
-                                        <img src="https://autocadtotal.com//img/amisam.png" alt="AMISAM Logo"
+                                        <img src="https://academiacad.com/img/amisam.png" alt="AcademiaCAD Logo"
                                             style="height: 100px; margin-bottom: 5px;">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td align="center">
                                         <h1 style="color: #ffffff; font-size: 30px; font-weight: bold; margin: 0;">
-                                            AMISAM</h1>
+                                            AcademiaCAD</h1>
                                         <p style="color: #e0e0e0; font-size: 16px; margin-top: 5px; font-weight: 500;">
                                             Clases virtuales de AutoCAD para profesionales
                                         </p>
@@ -46,7 +46,7 @@
 
                             <p style="font-size: 16px; color: #555; margin-top: 15px;">
                                 Tu <strong>pago ha sido aprobado</strong>. Ahora puedes acceder a tu cuenta en
-                                <strong>AMISAM</strong>.
+                                <strong>AcademiaCAD</strong>.
                             </p>
 
                             <p style="font-size: 15px; color: #444; margin-top: 20px;">
@@ -76,9 +76,9 @@
                     <!-- Footer -->
                     <tr style="background-color: #f9f9f9;">
                         <td style="padding: 20px; text-align: center; font-size: 13px; color: #777;">
-                            © 2025 AMISAM. Todos los derechos reservados.<br>
-                            <a href="https://autocadtotal.com"
-                                style="color: #007bff; text-decoration: none;">www.autocadtotal.com</a>
+                            © 2025 AcademiaCAD. Todos los derechos reservados.<br>
+                            <a href="https://academiacad.com"
+                                style="color: #007bff; text-decoration: none;">www.academiacad.com</a>
                         </td>
                     </tr>
                 </table>
